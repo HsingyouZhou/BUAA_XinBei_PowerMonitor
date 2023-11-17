@@ -13,9 +13,9 @@
 
 U8G2_SSD1306_128X64_NONAME_F_4W_SW_SPI u8g2(U8G2_R0, /* clock=*/ 18, /* data=*/  23, /* cs=*/ 10, /* dc=*/ 25, /* reset=*/ 26);
 
-const char* ssid = "IoT_AP";              //WIFI SSID
-const char* password =  "goodlife";      //WIFI password
-const char* stucode = "22371558";       //Enter your student ID
+const char* ssid = "********";              //WIFI SSID
+const char* password =  "********";      //WIFI password
+const char* stucode = "********";       //Enter your student ID
 const char *type = "1";
 
 String Poster = "{\"stucode\":\"";
@@ -31,7 +31,7 @@ void setup() {
   u8g2.sendBuffer();
   delay(3000);
   u8g2.clearBuffer();
-  u8g2.drawUTF8(0,45,"X15-504");
+  u8g2.drawUTF8(0,45,"********"); // Dom ID
   u8g2.sendBuffer();
   delay(3000);
 
